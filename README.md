@@ -70,6 +70,11 @@ The `predict_fake_news` function in `main.py` handles the preprocessing and pred
 - Tokenization and padding are applied using the saved tokenizer.
 - The model prediction is made, and confidence thresholds are used to classify the news.
 
+## UI
+![image](https://github.com/sobit-nep/Fake-News-Detection-System/assets/65544518/6657be17-79d9-4144-8d45-55230ae7485f)
+![image](https://github.com/sobit-nep/Fake-News-Detection-System/assets/65544518/ba1cfd9b-bf51-45ce-bb9f-a44c5db88383)
+
+
 ## Acknowledgements
 
 - [GloVe: Global Vectors for Word Representation](https://nlp.stanford.edu/projects/glove/)

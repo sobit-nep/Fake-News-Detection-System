@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Fake News Detection System</title>
+</head>
+<body>
+    <div class="container">
+        <center><h1>Fake News Detection System</h1></center>
+        <form method="post">
+
+            
+            
+            {% if not prediction %}
+            <label for="url">URL:</label>
+            <input type="url" id="url" name="url" placeholder="Enter news URL">
+            {% endif %}                      
+            {% if not prediction %}
+            <center><h2>OR</h2></center>
+            {% endif %}
+            {% if url %}
+            <center><h2>Scraped Content from your url:{{url}}</h2></center>
+            {% endif %}
+
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" value="{{ title }}" {% if scraped_title %} placeholder="{{ scraped_title }}" {% endif %}>
+            
+            <label for="text">Text:</label>
+            <textarea id="text" name="text" rows="4" {% if scraped_text %} placeholder="{{ scraped_text }}" {% endif %}>{{ text }}</textarea>
+            {% if not prediction %}
+            <button type="submit">Submit</button>
+            {% endif %}
+        </form>
+
+        {% if prediction %}
+            <div class="result">
+                <center><h2>Prediction:</h2></center>
+                <center><p>{{ prediction }}</p><center>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>

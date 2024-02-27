@@ -88,4 +88,4 @@ The `predict_fake_news` function in `main.py` handles the preprocessing and pred
 
 ---
 
-Feel free to customize the README.md to include additional sections such as project structure, future improvements, and any other relevant information.
+

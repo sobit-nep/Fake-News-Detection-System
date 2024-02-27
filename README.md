@@ -18,6 +18,9 @@ model.add(Dense(units=32, activation='relu'))
 model.add(Dense(1, activation='sigmoid'))
 model.compile(optimizer=tf.keras.optimizers.Adam(lr=0.01), loss='binary_crossentropy', metrics=['accuracy'])
 ```
+![image](https://github.com/sobit-nep/Fake-News-Detection-System/assets/65544518/4147dcca-e90e-4707-8c89-37c7bbecc61c)
+
+
 ## Model Training
 ![image](https://github.com/sobit-nep/Fake-News-Detection-System/assets/65544518/3f2dc579-7d2d-4749-b389-e67cb0ccad2a)
 

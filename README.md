@@ -1,4 +1,4 @@
-# Fake News Detection System(val_accuracy>99.41%)
+# Fake News Detection System(val_accuracy>99%)
 
 ## Overview
 

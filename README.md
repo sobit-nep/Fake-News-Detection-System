@@ -38,7 +38,7 @@ model.compile(optimizer=tf.keras.optimizers.Adam(lr=0.01), loss='binary_crossent
 
     ```bash
     git clone https://github.com/sobit-nep/fake-news-detection.git
-    cd fake-news-detection
+    cd my_fake_news_detection_system
     ```
 
 2. Install the required dependencies:
